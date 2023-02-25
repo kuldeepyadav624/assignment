@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  max-height: 100vh;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  background-color: rgba(168, 141, 83, 0.356);
+  color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toggle{
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  top: 73px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toggle button{
+  padding: 10px;
+  width: 97px;
+}
+.table{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 8px;
+}
+
+.container{
+  margin-left: 150px;
+}
+
+.container p{
+  width: 350px;
+  color: black;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.inputBox{
+  padding: 10px;
+  display: block;
+  border: 1.5px solid rgb(59, 56, 56);
+  width:300px;
+  margin: 0px;
+  text-align: left;
+}
+.view{
+  background-color: rgba(100, 100, 219, 0.543);
+  margin:"10px 0px 10px 0px";
+  font-size: x-large;
+}
+.view span{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#customers {
+  margin-top:20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse:calc();
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#customers td, #customers th {
+  border: 1.5px solid #ddd;
+  padding: 15px;
+  min-width: 350px;
+  
+}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+form {
+	display:inline;
+	flex-direction: column;
+}
+
+span{
+  color: rgb(97, 55, 55);
+}
+
+
+.submit{
+  margin: 20px;
+  width: 150px;
+  padding: 10px;
+  background-color: rgba(132, 95, 95, 0.658);
+  border: solid 1.5px;
+  cursor: pointer;
+}
+
+.main{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 8px;
+}
+.card{
+  width: 210px;
+  border: 2px solid gray;
+  margin-left: 15px;
+  padding: 2px;
+  height: 260px;
+}
+.image{
+  text-align: center;
+  margin-top: 20px;
+}
+.image img{
+  width: 135px;
+  border-radius: 50%;
+  text-align: center;
+}
+.card-data{
+text-align: center;
+margin-top: 10px;
 }
