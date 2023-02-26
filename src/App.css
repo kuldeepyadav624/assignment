@@ -1,22 +1,35 @@
 *{
   margin: 0px;
   padding: 0px;
-  max-height: 100vh;
-  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .header{
   background-color: rgba(168, 141, 83, 0.356);
   color: white;
+  width: 100%;
+  height: 60px;
 }
+.header-ul{
+  display: flex;
+}
+.header-ul li{
+  margin: 20px;
+  color: black;
+  font-weight: 700;
+  list-style: none;
+  cursor: pointer;
+}
+
 .toggle{
-  position: absolute;
-  right: 0;
+  display: flex;
   margin-right: 20px;
-  top: 73px;
+  margin-top: 20px;
 }
+
 .toggle button{
   padding: 10px;
   width: 97px;
+  font-weight: 600;
 }
 .table{
   display: flex;
@@ -24,44 +37,62 @@
 }
 
 .container{
-  margin-left: 150px;
+  margin-left: 50px;
 }
 
-.container p{
-  width: 350px;
+.container span{
   color: black;
   font-size: x-large;
   font-weight: 600;
 }
 
-.inputBox{
+.container select{
+    width: 100px;
+    font-size: large;
+    padding: 5px;
+    margin-left: 20px;
+}
+.login1{
+  text-align: center;
+}
+.login1 h1{
+  margin-top: 20px;
+}
+
+.style{
+  text-align: -webkit-center;
+  margin-top: 25px;
+}
+
+.input{
   padding: 10px;
-  display: block;
   border: 1.5px solid rgb(59, 56, 56);
   width:300px;
-  margin: 0px;
-  text-align: left;
+  margin:14px;
+}
+.inputBox{
+  padding: 10px;
+  border: 1.5px solid rgb(59, 56, 56);
+  width:300px;
 }
 .view{
-  background-color: rgba(100, 100, 219, 0.543);
-  margin:"10px 0px 10px 0px";
-  font-size: x-large;
+  background-color: rgba(172, 172, 201, 0.543);
+  margin-top: 10px;
 }
 .view span{
   color: white;
 }
 
 #customers {
-  margin-top:20px;
+  margin-top:50px;
   font-family: Arial, Helvetica, sans-serif;
-  border-collapse:calc();
   width: 100%;
 }
 
 #customers td, #customers th {
   border: 1.5px solid #ddd;
   padding: 15px;
-  min-width: 350px;
+  width: 350px;
   
 }
 
@@ -92,9 +123,11 @@ span{
   background-color: rgba(132, 95, 95, 0.658);
   border: solid 1.5px;
   cursor: pointer;
+ 
 }
 
 .main{
+  margin-top:60px;
   display: flex;
   margin-top: 30px;
   margin-left: 8px;
@@ -119,3 +152,54 @@ span{
 text-align: center;
 margin-top: 10px;
 }
+
+@media (max-width: 715px) {
+  .container{
+    margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .table{
+      display: block;
+      }
+      .container{
+       margin-top: 30px;
+        }
+    }
+    @media (max-width: 375px) {
+      .toggle{
+        display: flex;
+        justify-content: left;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .container select {
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .inputBox {
+      padding: 10px;
+      border: 1.5px solid rgb(59, 56, 56);
+      width: 200px;
+  }
+      }
+@media (min-width: 250px) {
+ .header{
+  width: 100%;
+ }
+}
+@media (max-width: 715px) {
+  .main{
+ margin-right: 20px;
+  }
+ }
+ @media (max-width:500px) {
+  .main{
+display: block;
+  }
+  .card{
+    width: auto;
+    margin-top: 20px;
+  }
+ }

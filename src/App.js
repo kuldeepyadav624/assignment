@@ -1,16 +1,17 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./Login";
-import Assign from "./Assign";
-import Private from "./Private";
+import Login from "./Components/Login";
+import Assign from "./Components/Assign";
+import Private from "./Components/Private";
+import Header from "./Components/Header"
 import './App.css';
-import Header from "./Header";
+
 
 function App() {
   return (
     <div>
       <Header/>
-      <BrowserRouter>
+       <BrowserRouter>
         <Routes>
           <Route element={<Private />}>
             <Route path="/assign" element={<Assign />} />

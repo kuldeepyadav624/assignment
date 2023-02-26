@@ -24,16 +24,14 @@ function Login() {
   };
   return (
     <div className="login1">
-      <legend>
-        <h2>Login</h2>
-      </legend>
-      <div>
+      <h1>LOGIN</h1>
+
+      <div className="style">
         <div style={{ color: "red" }}>
           {error ? <span>{error}</span> : null}
         </div>
         <form onSubmit={submitvalue}>
-          <input
-            className="inputBox"
+          <input className="input"
             type="text"
             placeholder="Please Enter Email id"
             value={email}
@@ -42,8 +40,7 @@ function Login() {
             }}
           />{" "}
           <br />
-          <input
-            className="inputBox"
+          <input className="input"
             type="password"
             placeholder="Please Enter Password"
             value={password}
@@ -53,7 +50,7 @@ function Login() {
           />{" "}
           <br />
           <button className="submit" type="submit">
-            submit
+            SUBMIT
           </button>
         </form>
       </div>
